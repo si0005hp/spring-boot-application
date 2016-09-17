@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_temp :: header ('SimpleForm jobs')">
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>SimpleForm jobs</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <tbody>
+                <tr th:each="job,iterStat : ${jobMsts}">
+                    <td th:text="${job.jobId}">1</td>
+                    <td th:text="${job.status}">1</td>
+                    <td th:text="${job.startDate}">1</td>
+                    <td th:text="${job.endDate}">1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div th:replace="_temp :: footer"></div>
+</div>
+<div th:include="_temp :: script"></div>
+</body>
+</html>

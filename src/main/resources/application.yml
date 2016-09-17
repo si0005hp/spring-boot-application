@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+
+  messages:
+    basename = messages
+    cache-seconds = -1
+    encoding = UTF-8
+
+endpoints:
+  enabled: true
