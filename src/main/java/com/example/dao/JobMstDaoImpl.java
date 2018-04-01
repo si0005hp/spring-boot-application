@@ -11,7 +11,7 @@ import com.example.struct.JobMstDto;
 import com.example.struct.JobMstDto.JobStatus;
 
 @Repository
-final class JobMstDaoImpl implements JobMstDao {
+public class JobMstDaoImpl implements JobMstDao {
 
 	@Override
 	public List<JobMstDto> getAllJobMst() {
